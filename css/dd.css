@@ -1,0 +1,461 @@
+html{
+    font-size: 62.5%;
+}
+@font-face {
+    font-family: main;
+    src: url(fonts/GAELA.otf);
+}
+@font-face {
+    font-family:main2 ;
+    src: url(fonts/TT\ Chocolates\ Trial\ Bold.otf);
+}
+:root{
+    --font: 'Open Sans', sans-serif;
+}
+::selection{
+    background-color: black;
+    color: white;
+}
+
+.logo{
+    position: relative;
+    left: -20px;
+    width: 150px;
+    max-width: fit-content;
+    top: -10px;
+}
+.back{
+    display: flex;
+    justify-content: flex-start;
+    align-self: baseline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    position: relative;
+    top: 86%;
+    left: 10px;
+    width: fit-content;
+    position: absolute;
+    gap: 3px;
+    transition: all 0.2s ease-in-out 0s;
+    cursor: pointer;
+}
+.back>p{
+    font-weight: 100;
+    font-family:var(--font) ;
+    transition: all 0.2s ease-in-out 0s;
+    position: relative;
+    left: -5px;
+    transition: all 0.2s ease-in-out 0s;
+}
+.back:hover p{
+    letter-spacing: 1px;
+    position: relative;
+    left: 1px;
+}
+.welcome{
+    font-family: main;
+    position: relative;
+    width: fit-content;
+}
+.rand{
+    font-family: main;
+    position: relative;
+    width: fit-content;
+}
+.eee{
+    width: fit-content;
+    display: block;
+    position: absolute;
+}
+.email{
+    outline: none;
+    width: 320px;
+    height: 30px;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2rem;
+    font-family: main2;
+    position: relative;
+    top: 30px;
+    left: 10px;
+    transition: all 0.3s ease-in-out 0s;
+}
+.uil-exclamation-circle{
+    color: red;
+    position: relative;
+    top: 30px;
+    left: -20px;
+    display: none;
+    z-index: 1;
+    transition: all 0.3s ease-in-out 0s;
+}
+.password{
+    outline: none;
+    width: 320px;
+    height: 30px;
+    border-bottom: 2px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 2rem;
+    font-family: main2;
+    position: relative;
+    top: 90px;
+    left: 10px;
+    transition: all 0.3s ease-out 0s;
+}
+.reset{
+    text-decoration: none;
+    color: black;
+    font-family: main;
+    position: relative;
+    transition: all 0.3s ease-in-out 0s;
+}
+.hr{
+    font-family: main;
+    position: relative;
+    width: fit-content;
+}
+.incorrect1 {
+    width: fit-content;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+.incorrect2 {
+    width: fit-content;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+.log1{
+    background-color: black;
+    color: white;
+    font-family: main;
+    width: 300px;
+    border-radius: 5px;
+    height: 35px;
+    display: inline-block;
+    transition: all 0.3s ease-in-out 0s;
+    font-size: 1.6rem;
+    animation: cool 0.4s ease-in-out 0s infinite normal both;
+}
+.or{
+    position: absolute;
+    font-family: main;
+    z-index: 1;
+}
+.sigr{
+    font-family: main;
+    position: absolute;
+    z-index: 1;
+}
+.si{
+    cursor: default;
+}
+.dam{
+    text-decoration: none;
+    color: black;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    position: relative;
+    width: fit-content;
+    z-index: 1;
+}
+.fa-google{
+    transition: all 0.3s ease-out 0s;
+}
+.fa-google:hover{
+    color: green;
+    cursor: pointer;
+}
+.fa-x-twitter{
+
+    transition: all 0.3s ease-out 0s;
+}
+.fa-x-twitter:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.fa-facebook{
+    transition: all 0.3s ease-out 0s;
+}
+.fa-facebook:hover{
+    color: rgb(24, 119, 242);
+    cursor: pointer;
+}
+.fa-github{
+    transition: all 0.3s ease-out 0s;
+}
+.fa-github:hover{
+    color: #c9510c;
+    cursor: pointer;
+}
+.fa-instagram{
+    transition: all 0.3s ease-out 0s;
+}
+.fa-instagram:hover{
+    color: #C13584;
+    cursor: pointer;
+}
+.showpass{
+    position: relative;
+    color: black;
+    width: fit-content;
+}
+.fa-eye{
+    position: relative;
+    left: 30px;
+    display: block;
+    width: fit-content;
+    transition: all 0.3s ease-out 0s;
+}
+.fa-eye-slash{
+    display: none;
+    transition: all 0.3s ease-out 0s;
+}
+.iu{
+    display: none;
+}
+
+@media only screen and (max-width: 1039px) {
+    .img1{
+        position:absolute;
+        right: -0px;
+        top: -0px;
+        width: fit-content;
+        height: 100%;
+    }
+    body{
+        font-size: 2rem;
+    }
+    .he{
+        display: grid;
+        place-items: center;
+    }
+    .empass{
+        display: grid;
+        place-items: center;
+    }
+    .reset{
+        left: 54%;
+        top: 10rem;
+        font-size: 1.7rem;
+    }
+    .contain{
+        display: grid;
+        place-items: center;
+    }
+    .hr{
+        display: grid;
+        place-items: center;
+        font-size: 1.6rem;
+        top: 8rem;
+    }
+    .incorrect2{
+        position: relative;
+        top:-50px;
+    }
+    .log1{
+        width: 325px;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        margin-top: 3rem;
+        margin-left: 1rem;
+    }
+    .comt{
+        display: grid;
+        place-items: center;
+        position: relative;
+        top: 30px;
+        left: 10px;
+    }
+    .con{
+        display: grid;
+        place-items: center;
+        position: relative;
+        top: 14rem;
+    }
+    .social{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 3rem;
+        position: relative;
+        top: 6rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+    .showpass{
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        margin-top:-18rem;
+        margin-left: 13rem;
+    }
+    .error{
+        position: relative;
+        left:16rem;
+        top: -3.5rem;
+    }
+}
+@media only screen and (min-width: 1040px) {
+    .img1{
+        position:absolute;
+        right: -0px;
+        top: -0px;
+        width: fit-content;
+        height: 100%;
+    }
+    body{
+        font-size: 2.6rem;
+    }
+    .he{
+        position: fixed;
+        left:100px;
+    }
+    .empass{
+        position: relative;
+        top: 110px;
+        left: 100px;
+        width: fit-content;
+    }
+    .reset{
+        top: 21rem;
+        margin-left: 300px;
+        font-size: 1.6rem;
+    }
+    .hr{
+        display: grid;
+        place-items: center;
+        position: absolute;
+        font-size: 1.6rem;
+        top:42.5rem;
+        left: 11rem;
+    }
+    .incorrect2{
+        position: relative;
+        top:-50px;
+        left: 80px;
+    }
+    .log1{
+        position: relative;
+        top: 24rem;
+        width: 325px;
+        left: 11rem;
+    }
+    .or{
+        font-size: 2.1rem;
+        position: absolute;
+        top: 55rem;
+        left: 12rem;
+        width: fit-content;
+    }
+    .con{
+        position: relative;
+        top: 41rem;
+        left: 16rem;
+        width: 300px;
+    }
+    .social{
+        font-size: 3rem;
+        position:relative;
+        top:32rem;
+        left: 13rem;
+        width: 500px;
+        display: inline-flex;
+    }
+    .showpass{
+        top: 6.8rem;
+        left: 37rem;
+    }
+    .error{
+        position: absolute;
+        left: 30.2rem;
+        top: 3rem;
+    }
+}
+@media only screen and (min-width: 1900px){
+    body{
+        font-size: 3.4rem;
+    }
+    .he{
+        position: absolute;
+        left:210px;
+    }
+    .empass{
+        position: relative;
+        top: 140px;
+        left: 210px;
+        width: fit-content;
+    }
+    .email{
+        width: 420px;
+    }
+    .password{
+        width: 420px;
+    }
+    .reset{
+        position: relative;
+        left: 220px;
+        top: 22.5rem;
+    }
+    .hr{
+        position: relative;
+        top: 21.5rem;
+        left: 25rem;
+    }
+    .log1{
+        position: relative;
+        top:14rem;
+        left: 22rem;
+        width: 425px;
+    }
+    .or{
+        font-size: 2.7rem;
+        position: relative;
+        top: 19rem;
+        left: 22.5rem;
+    }
+    .con{
+        position: relative;
+        font-size:2.7rem ;
+        top: 31rem;
+        left: 31rem;
+    }
+    .social{
+        position: relative;
+        top: 23rem;
+        font-size: 4rem;
+        left: 26rem;
+        gap: 45px;
+    }
+    .showpass{
+        top: -8rem;
+        left: 57.5rem;
+        font-size: 2.7rem;
+    }
+    .error{
+        position: relative;
+        left: 39.5rem ;
+        top: -5rem;
+        font-size: 2.7rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    body{
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 768px) {
+    body{
+        font-size: 2rem;
+    }
+}
